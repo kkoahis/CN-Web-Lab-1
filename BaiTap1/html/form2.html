@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/BaiTap1/assets/css/styleForm2.css" />
+    <script language="JavaScript">
+      function clearFields() {
+        document.form2.textBox.value = "";
+        document.form2.textArea.value = "";
+        document.form2.fileBox.value = "";
+        document.form2.radioButton.checked = false;
+        document.form2.checkBox.checked = false;
+      }
+    </script>
+    <title>Form 2</title>
+  </head>
+  <body bgcolor="AADDDD">
+    <form action="xuliform2.jsp" name="form2" method="post/get">
+      <div class="container">
+        <table border="0">
+          <caption>
+            <h1 class="table-title">VÍ DỤ VỀ TẠO FORM</h1>
+          </caption>
+          <tr>
+            <td>Text box</td>
+            <td>
+              <input
+                type="text"
+                name="textBox"
+                value=""
+                class="textbox-input"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Text area</td>
+            <td>
+              <textarea name="textArea" class="texarea-input"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>File box</td>
+            <td>
+              <input type="text" name="fileBox" class="firebox-input" />
+            </td>
+            <td>
+              <input
+                type="button"
+                name="BrowseFile"
+                value="Browse..."
+                class="Browse-btn"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="radio" name="radioButton" class="radio-btn" />
+              Radio button
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                name="checkBox"
+                class="checkbox-btn"
+              />Check box
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                name="submitBtn"
+                value="Submit"
+                class="submit-btn"
+              />
+              <input
+                type="button"
+                name="resetBtn"
+                value="Reset"
+                class="reset-btn"
+                onclick="clearFields()"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>

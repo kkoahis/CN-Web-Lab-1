@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script language="JavaScript">
+      function doichu() {
+        var getText = document.f1.t1.value;
+        document.f1.t2.value = getText.toUpperCase();
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      style="display: flex; justify-content: center"
+      action="xuliUppercase.jsp"
+      name="f1"
+      method="post/get"
+    >
+      <input type="text" name="t1" onblur="doichu()" />
+      <input type="text" name="t2" />
+    </form>
+  </body>
+</html>

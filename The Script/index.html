@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script language="JavaScript">
+      function doimau() {
+        var getColor = document.f1.t1.value;
+        document.bgColor = getColor;
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      style="display: flex; justify-content: center"
+      action="xulidoimau.jsp"
+      name="f1"
+      method="post/get"
+    >
+      <input type="text" name="t1" value="" />
+      <input type="button" name="b1" value="OK" onclick="doimau()" />
+    </form>
+  </body>
+</html>
